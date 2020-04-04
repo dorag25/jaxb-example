@@ -7,22 +7,21 @@ import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlValue;
+import java.lang.String;
 
-@XmlAccessorType(XmlAccessType.FIELD)
-@Data
 public class Weight {
-
-    @XmlValue
-    private double value;
 
     @XmlAttribute
     private String unit;
 
-    public Weight(){}
+    @XmlValue
+    private double value;
 
-    public Weight(double value, String unit){
-        this.value=value;
+
+    public Weight(String unit,double value){
         this.unit=unit;
+        this.value=value;
+
     }
 
 

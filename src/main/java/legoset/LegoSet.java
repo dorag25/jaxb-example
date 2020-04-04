@@ -14,13 +14,14 @@ import java.util.Set;    //MEGVAN
 
 @XmlRootElement
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(propOrder = {"name", "theme", "subtheme", "year", "pieces", "tags", "minifigs", "url"})
+@XmlType(propOrder = {"name", "theme", "subtheme", "year", "pieces", "tags", "minifigs","weight","url"})
 @Data
 public class LegoSet {
 
     private String name;   //megvan
     private String theme;   //megvan
     private String subtheme;    //megvan
+    private List<Weight> weight;
 
     @XmlJavaTypeAdapter(YearAdapter.class)
     private Year year;  //megvan
@@ -38,7 +39,7 @@ public class LegoSet {
     //@XmlAttribute
     private String url;
 
-    //private String weight;
+
 
    @XmlAttribute
    private int number;

@@ -10,6 +10,7 @@ import java.text.NumberFormat;
 import java.time.Year;
 import java.util.ArrayList;
 import java.util.Set;
+import java.lang.String;
 
 public class Main {
 
@@ -24,7 +25,11 @@ public class Main {
         legoset.setTags(Set.of("Starfighter","Stormtrooper","Star Wars","Solo"));
         legoset.setUrl("https://brickset.com/sets/75211-1/Imperial-TIE-Fighter");
         legoset.setNumber(75211);
-        //legoset.setWeight(new Weight(0.89,"kg"));
+
+        ArrayList<Weight> weight = new ArrayList<>();
+        weight.add(new Weight("kg",0.89));
+        legoset.setWeight(weight);
+
 
 
 
