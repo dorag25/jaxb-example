@@ -38,8 +38,8 @@ public class LegoSet {
     //@XmlAttribute
     private String url;
 
-   // private double weight;
+    private String weight;
 
-   // @XmlAttribute
-   //    private Number number;
+   @XmlAttribute
+   private int number;
 }

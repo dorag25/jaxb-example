@@ -18,6 +18,8 @@ public class Weight {
     @XmlAttribute
     private String unit;
 
+    public Weight(){}
+
     public Weight(double value, String unit){
         this.value=value;
         this.unit=unit;

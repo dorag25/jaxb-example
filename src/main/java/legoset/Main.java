@@ -6,6 +6,7 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.math.BigDecimal;
 import java.net.URL;
+import java.text.NumberFormat;
 import java.time.Year;
 import java.util.ArrayList;
 import java.util.Set;
@@ -22,7 +23,7 @@ public class Main {
         legoset.setPieces(519);
         legoset.setTags(Set.of("Starfighter","Stormtrooper","Star Wars","Solo"));
         legoset.setUrl("https://brickset.com/sets/75211-1/Imperial-TIE-Fighter");
-        //legoset.setNumber(new BigDecimal("75211"));
+        legoset.setNumber(75211);
         //legoset.setWeight(new Weight(0.89,"kg"));
 
 
@@ -34,9 +35,8 @@ public class Main {
         legoset.setMinifigs(minifigs);
 
         JAXBHelper.toXML(legoset, System.out);
-
         JAXBHelper.toXML(legoset, new FileOutputStream("legoset.xml"));
-        System.out.println(JAXBHelper.fromXML(LegoSet.class, new FileInputStream("legoset.xml")));
+        //System.out.println(JAXBHelper.fromXML(LegoSet.class, new FileInputStream("legoset.xml")));
 
     }
 }
