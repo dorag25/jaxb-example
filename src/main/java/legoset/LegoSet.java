@@ -14,7 +14,7 @@ import java.util.Set;    //MEGVAN
 
 @XmlRootElement
 @XmlAccessorType(XmlAccessType.FIELD)
-//@XmlType(propOrder = {"name", "theme", "subtheme", "year", "pieces", "tags", "minifigs", "weight", "url"})
+@XmlType(propOrder = {"name", "theme", "subtheme", "year", "pieces", "tags", "minifigs", "url"})
 @Data
 public class LegoSet {
 
@@ -38,7 +38,7 @@ public class LegoSet {
     //@XmlAttribute
     private String url;
 
-    private String weight;
+    //private String weight;
 
    @XmlAttribute
    private int number;
