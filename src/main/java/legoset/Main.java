@@ -23,7 +23,7 @@ public class Main {
         legoset.setTags(Set.of("Starfighter","Stormtrooper","Star Wars","Solo"));
         legoset.setUrl("https://brickset.com/sets/75211-1/Imperial-TIE-Fighter");
         //legoset.setNumber(new BigDecimal("75211"));
-        legoset.setWeight(new Weight(0.89,"kg"));
+        //legoset.setWeight(new Weight(0.89,"kg"));
 
 
 

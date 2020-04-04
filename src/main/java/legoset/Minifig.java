@@ -18,6 +18,8 @@ public class Minifig {
     @XmlAttribute
     private int count;
 
+    public Minifig(){}
+
     public Minifig(String title,int count) {
         this.title=title;
         this.count=count;
